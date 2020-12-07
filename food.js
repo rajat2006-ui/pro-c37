@@ -27,10 +27,6 @@ class Food{
         if(gameState==="playing"){
             imageMode(CENTER)
             image(gardenImg,500,250,1000,500)
-            button1.hide()
-            button2.hide()
-            button3.hide()
-            input.hide()
         }
     }
 
@@ -38,10 +34,13 @@ class Food{
         if(gameState==="sleep"){
             imageMode(CENTER)
             image(bedroomImg,500,250,1000,500)
-            button1.hide()
-            button2.hide()
-            button3.hide()
-            input.hide()
+        }
+    }
+
+    washRoom(){
+        if(gameState==="bath"){
+            imageMode(CENTER)
+            image(washroomImg,500,250,1000,500)
         }
     }
 }
